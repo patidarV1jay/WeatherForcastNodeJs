@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+    />
+    <title>Weather Forecast</title>
+    <style>
+      .header {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <i class="fas fa-sun fa-2xl" style="color: yellow; font-size: 50px"></i>
+      <div class="location">
+        <h2>
+          <i class="fas fa-street-view" style="color: #ed1707"></i> PUNE, IN
+        </h2>
+      </div>
+      <div>
+        <p id="date">WED | OCT 23 | 10:49AM</p>
+        <h2>{%currentTemp%}&deg;C</h2>
+        <h3>Min 26.49&deg;C | Max 26.49&deg;C</h3>
+      </div>
+    </div>
+
+    <script src="./main.js">
+      // const currentTime = document.getElementById("date")
+      // const days =["Mon","Tue","Wed","Thus","Fri","Sat","Sun"]
+      // const Months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+      // const date = new Date()
+      // const day = days[date.getDay()-1].toUpperCase()
+      // const month = Months[date.getMonth()]
+      // const year = date.getFullYear()
+      // let hours = date.getHours()
+      // let minutes = date.getMinutes()
+      // let meridian = 'AM'
+      // if(hours>11){
+      //     meridian="PM"
+      //     if(hours>12){
+      //         hours = hours - 12
+      //     }
+      // }
+      // if(minutes < 10){
+      //     minutes = "0"+minutes
+      // }
+      // currentTime.innerHTML= `${day} | ${month} ${year} | ${hours}:${minutes}${meridian}`
+    </script>
+  </body>
+</html>
